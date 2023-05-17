@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>EVENTY-Login</title>
+<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="stylesheet" type="text/css" href="styling.css" />
+        <meta name="descripition" content="EVENTY-Login" >
+</head>
+
+
+<div  class="sticky" >
+    
+    <div class="logo">
+        <img src="images\Screenshot (32).png" alt="logo" width="70" height="70"><div class="find"><h4> Find events</h4></div>
+    </div> 
+<br>
+
+
+    <nav >
+      <ul class="nav">
+        <a href="homepage.html"><b> HOME</b><a>
+        <a href="signup.html"><b>SIGNUP</b><a> 
+        <a href="aboutus.html"><b>ABOUT US</b><a> 
+        <a href="aboutus.html"><b>CONTACT US</b><a>
+        </ul>                       
+    </nav>
+  </div> 
+
+  <body class="x">
+    <div class="box">
+        <div class="form">
+            <h3> Log in</h3>
+            
+            <div class="inputbox">
+                <label for="Username">Username</label>
+                <input type="text" id="username" required>
+                
+            </div>
+            <div class="inputbox2">
+                <label for="Password">Password</label>
+                <input type="password" id="password" minlength="8" required>
+            
+        </div>
+        <div class="links"><br>
+                <a href="signup.html">Signup </a>
+        </div>
+        <br>
+        <input type="submit" onclick="login()"  value="login" class="submitbutton" >
+        
+       
+    </div>
+
+  
+ <script>
+
+function login(){
+    const username = document.getElementById("username").value;
+    
+    const password = document.getElementById("password").value;
+   
+      if(username==""){
+        alert("No username entered");
+  
+      }else if(password==""){
+        alert("No password entered");
+      }else{
+        document.write("You are logged in.")
+           
+     }
+   }    
+ 
+ </script>
+</body>
+
+
+
+</html>
+         
+    

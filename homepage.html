@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>EVENTY</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="styling.css" />
+  <meta name="descripition" content="Eventy-an event finding website" >
+</head>
+
+<div  class="sticky" >
+    
+     <div class="logo">
+         <img src="images\Screenshot (32).png" alt="logo" width="70" height="70"> <div class="find"><h4>   Find events</h4></div>
+       </div> 
+     
+      <div class="search-container">
+        <form class="form-se" name="form1" >
+          <input class="input-search" name="text1"  oninput = "Search((this.value).toLowerCase())"  type="text" id="search"  placeholder="Search.." >
+          <button class="submitbut"  onsubmit ="loadSearchData()" type="submit">Search</button>
+          <ul >
+            <li class = "lists">Arts</li>
+            <li class = "lists">Expos</li>
+            <li class = "lists">Classes</li>
+            <li class = "lists">Sightseeing</li>
+          </ul>
+        
+         
+	     
+        </form></div>
+  
+       
+      <nav >
+        <ul class="nav">
+        <a href="login page.html"><b> LOGIN</b><a>
+        <a href="signup.html"><b>SIGNUP</b><a>
+        <a href="aboutus.html"><b>ABOUT US</b><a>
+        <a href="aboutus.html"><b>CONTACT US</b><a>
+        </ul>                     
+      </nav>
+
+</div>  
+
+<br>
+<body class="x">
+<script language=JavaScript>
+    function Search(item){
+            var collection = document.getElementsByClassName("lists");
+            for (i = 0;i < collection.length; i++){
+                if (((collection[i].innerHTML).toLowerCase()).indexOf(item) > -1) {
+                    collection[i].style.display = "block";
+                    } else {
+                        collection[i].style.display = "none";
+                        }
+            }
+    }
+</script>
+<table class="homepagetable">
+  
+  <td width="60%" ><img src="images\Screenshot (10).png" alt="a picture that says arts" width="150" height="150"></td>
+  <td width="60%" ><img src="images\Screenshot (12).png" alt="mountian view" width="150" height="150"></td>
+  
+  
+ 
+  <tr>
+  <td ><a href="Arts.html">ARTS</a>
+  <p class="atext">Click here to find events related to art,fashion,<br>music,movies,theaters and so much more<br>
+  DISCOVER artists in your area.</p></td>
+  <tD ><a href="sightseeing.html">SIGHTSEEING</a>
+  <p class="atext">Look for places to visit and sites to see.</p></td>
+  
+  <tr>
+    <td width="50%" ><img src="images\Screenshot (13).png" alt="people in a classroom"width="150" height="150"></td>
+  <td width="50%" ><img src="images\Screenshot (11).png"alt="exhibition pic" width="150" height="150"></td></tr>
+  <tr>
+    <td><a href="classes.html">CLASSES</a>
+      <p class="atext">Want to stop wasting your time and do something valuable <br>instead, then look for the various classes available here.</p></td>
+  <td><a href="Expos.html">EXIBITIONS AND BAZAARS</a>
+  <p class="atext">Find more about the exibitions and different bazaars<br> happening soon.</p></td>
+</table>
+</body>
+
+<div class="footer" >
+<footer>
+  <table>
+    <tr width="100%">
+      
+      <td width="50%" >
+
+      <ul>
+        
+      <a  href="classes.html"><b>Online classes</b></a><br>
+      <a href="seminars.html"><b>Seminars</b></a><br>
+      
+    </ul>    
+    </td>
+ 
+    <td width="38%">
+   <a href="aboutus.html">Help</a><br>Find Tickets
+  </td> 
+  
+   <td width="70%">
+     <div id="x"><p><a href="aboutus.html">Contact us</a><ul><a href="aboutus.html">facebook </a><br> <a href="http://www.twitter.com/eventy">twitter</a><br><a href="http://www.instagram.com/eventy">Instagram </ul></p></div>
+    </td>
+  <tr><td> <p>© 2022 Eventy Events. All Rights Reserved.</p></td></tr>
+ 
+</div>
+</table>
+</footer>
+ 
+</body>
+</html>
